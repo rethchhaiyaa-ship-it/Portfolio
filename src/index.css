@@ -1,1 +1,94 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Semantic tokens. Utilities reference these directly (via `inline`), so the
+  `.dark` class on <html> is the only switch the whole theme depends on.
+  Palette is defined per-theme below — never per-component.
+*/
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-strong: var(--strong);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+}
+
+:root {
+  --page: #ffffff;
+  --surface: #fafafa;
+  --line: #e5e5e5;
+  --line-strong: #d4d4d4;
+  --strong: #171717;
+  --body: #525252;
+  --muted: #737373;
+  --accent: #15803d;
+  --accent-hover: #166534;
+  color-scheme: light;
+}
+
+.dark {
+  --page: #0a0a0a;
+  --surface: #131313;
+  --line: #262626;
+  --line-strong: #404040;
+  --strong: #fafafa;
+  --body: #a3a3a3;
+  --muted: #737373;
+  --accent: #4ade80;
+  --accent-hover: #22c55e;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-page text-body font-sans antialiased;
+    transition: background-color 150ms ease, color 150ms ease;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-strong;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    @apply bg-accent/25;
+    color: var(--strong);
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-accent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
