@@ -4,7 +4,7 @@
 export const profile = {
   name: 'Reth Chhaiya', // TODO
   location: 'Phnom Penh, Cambodia',
-  photo: 'profile.jpg', // TODO — '/profile.jpg' (place the file in public/), or null to hide
+  photo: 'profile_2.png', // TODO — '/profile.jpg' (place the file in public/), or null to hide
   email: 'rethchhaiyaa@gmail.com', // TODO
   github: 'https://github.com/rethchhaiyaa-ship-it', // TODO
   linkedin: null, // TODO — set a URL or leave null
