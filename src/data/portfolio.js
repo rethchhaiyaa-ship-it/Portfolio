@@ -25,7 +25,7 @@ export const projects = [
     tech: ['React', 'Tailwind CSS', 'Spring Boot', 'MySQL'],
     repo: 'https://github.com/Glassses-Management/Glasses-Management-Frontend.git', // TODO — GitHub URL
     demo: null, // TODO — live demo URL
-    image: null, // TODO — path to a screenshot, e.g. '/projects/glasses.png'
+    image: 'glasses.png', // TODO — path to a screenshot, e.g. '/projects/glasses.png'
   },
   {
     title: 'Tourism and Trip Planning Website',
@@ -34,7 +34,7 @@ export const projects = [
     tech: ['React', 'Tailwind CSS'],
     repo: 'https://github.com/NalenSrin123/tour-trip-front-sun-2.git', // TODO — GitHub URL
     demo: null, // TODO — live demo URL
-    image: null, // TODO — path to a screenshot
+    image: 'tour-trip.png', // TODO — path to a screenshot
   },
   {
     title: 'C++ Cafe Management System',
@@ -51,8 +51,8 @@ export const projects = [
       'An E-commerce system about food using Reactjs + Tailwind. Order, payment, using static data.',
     tech: ['React', 'Tailwind CSS', 'JavaScript'],
     repo: 'https://github.com/rethchhaiyaa-ship-it/Ecommerce-.git', // TODO — GitHub URL
-    demo: null,
-    image: null,
+    demo: 'https://react-e-comerce-final-project-khaki.vercel.app/',
+    image: 'foodi.png',
   },
 ]
 
