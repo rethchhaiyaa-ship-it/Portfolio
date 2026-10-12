@@ -4,7 +4,7 @@
 export const profile = {
   name: 'Reth Chhaiya', // TODO
   location: 'Phnom Penh, Cambodia',
-  photo: 'profile_2.png', // TODO — '/profile.jpg' (place the file in public/), or null to hide
+  photo: '/profile.jpg', // file in public/, or null to hide
   email: 'rethchhaiyaa@gmail.com', // TODO
   github: 'https://github.com/rethchhaiyaa-ship-it', // TODO
   linkedin: null, // TODO — set a URL or leave null
@@ -25,7 +25,7 @@ export const projects = [
     tech: ['React', 'Tailwind CSS', 'Spring Boot', 'MySQL'],
     repo: 'https://github.com/Glassses-Management/Glasses-Management-Frontend.git', // TODO — GitHub URL
     demo: null, // TODO — live demo URL
-    image: 'glasses.png', // TODO — path to a screenshot, e.g. '/projects/glasses.png'
+    image: '/glasses.jpg', // screenshot in public/
   },
   {
     title: 'Tourism and Trip Planning Website',
@@ -34,7 +34,7 @@ export const projects = [
     tech: ['React', 'Tailwind CSS'],
     repo: 'https://github.com/NalenSrin123/tour-trip-front-sun-2.git', // TODO — GitHub URL
     demo: null, // TODO — live demo URL
-    image: 'tour-trip.png', // TODO — path to a screenshot
+    image: '/tour-trip.jpg', // screenshot in public/
   },
   {
     title: 'C++ Cafe Management System',
@@ -52,7 +52,7 @@ export const projects = [
     tech: ['React', 'Tailwind CSS', 'JavaScript'],
     repo: 'https://github.com/rethchhaiyaa-ship-it/Ecommerce-.git', // TODO — GitHub URL
     demo: 'https://react-e-comerce-final-project-khaki.vercel.app/',
-    image: 'foodi.png',
+    image: '/foodi.jpg',
   },
 ]
 
