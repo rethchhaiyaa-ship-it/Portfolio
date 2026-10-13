@@ -24,7 +24,7 @@ export const projects = [
       'A web application for managing eyewear products, inventory, and customer orders. Built as a full-stack exercise with a React interface backed by a Spring Boot REST API and MySQL.',
     tech: ['React', 'Tailwind CSS', 'Spring Boot', 'MySQL'],
     repo: 'https://github.com/Glassses-Management/Glasses-Management-Frontend.git', // TODO — GitHub URL
-    demo: null, // TODO — live demo URL
+    demo: 'https://glasses-management-frontend.vercel.app/', // TODO — live demo URL
     image: '/glasses.jpg', // screenshot in public/
   },
   {
